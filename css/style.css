@@ -39,10 +39,6 @@ header {
     margin: 0;
 }
 
-.login-link a {
-    border-bottom: none;
-    font-size: 0.8rem;
-}
 
 /* Intro Section */
 .intro {
@@ -106,50 +102,30 @@ section h2 {
     letter-spacing: 0.5px;
 }
 
-/* Current Work Section */
+/* Work Item - Unified for all sections */
 .work-item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 40px;
 }
 
 .work-item img {
     max-width: 200px;
+    height: auto;
     margin-bottom: 20px;
+    max-height: 200px;
 }
 
 .work-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    font-weight: 400;
-}
-
-.work-item p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
-
-/* Past Work Section */
-.project {
-    margin-bottom: 40px;
-}
-
-.project h3 {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 15px;
     letter-spacing: 0.5px;
 }
 
-.project img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-    max-height: 200px;
-}
-
-.project p {
-    font-size: 0.9rem;
+.work-item p {
+    font-size: 1rem;
     line-height: 1.6;
 }
 
