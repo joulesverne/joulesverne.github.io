@@ -1,0 +1,185 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.name {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.login-link a {
+    border-bottom: none;
+    font-size: 0.8rem;
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 60px;
+}
+
+.intro-text {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.intro-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.intro-text p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.intro-text .link {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.social-links h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 60px;
+}
+
+section h2 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+/* Current Work Section */
+.work-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.work-item img {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.work-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.work-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Past Work Section */
+.project {
+    margin-bottom: 40px;
+}
+
+.project h3 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    max-height: 200px;
+}
+
+.project p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Publications Section */
+.publications p {
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+    }
+    
+    .intro-text {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .profile-pic {
+        margin: 0 auto;
+    }
+}
