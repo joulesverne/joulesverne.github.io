@@ -41,41 +41,37 @@ header {
     margin-bottom: 40px;
 }
 
-.name {
+header h1 {
     font-size: 1.8rem;
     letter-spacing: 1px;
     font-weight: 400;
     margin: 0;
 }
 
-/* Intro Section */
-.intro {
+/* First section is special - profile section */
+section:first-of-type {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 60px;
 }
 
-.intro-text {
+section:first-of-type div:first-child {
     flex: 1;
     padding-right: 40px;
 }
 
-.intro-text h1 {
+section:first-of-type h1 {
     font-size: 2rem;
     margin-bottom: 20px;
     font-weight: 400;
+    text-transform: none;
 }
 
-.intro-text p {
+section:first-of-type p {
     font-size: 1rem;
     margin-bottom: 20px;
     line-height: 1.6;
-}
-
-.intro-text .link {
-    display: inline-block;
-    margin-top: 10px;
 }
 
 .profile-pic {
@@ -91,12 +87,15 @@ header {
     object-fit: cover;
 }
 
-/* Section Styles */
+/* Generic Section Styles */
 section {
     margin-bottom: 60px;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+
 }
 
-/* Standardized section headings */
+/* Section Headings */
 section h1 {
     font-size: 1.5rem;
     font-weight: 500;
@@ -113,28 +112,23 @@ section h2 {
     text-transform: uppercase;
 }
 
-/* Work sections */
-.past-work,
-.current-work {
-    width: 100%;
-}
-
-/* Unified work items container for all sections */
-.work-items-container {
+/* Grid Container */
+.grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: 40px;
     width: 100%;
 }
 
-.work-item {
+/* Card Item */
+.card {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
-.work-item img {
+.card img {
     max-width: 200px;
     height: auto;
     margin-bottom: 20px;
@@ -142,12 +136,11 @@ section h2 {
     transition: transform 0.3s ease;
 }
 
-.work-item img:hover {
+.card img:hover {
     transform: scale(1.05);
 }
 
-/* Work item headings */
-.work-item h3 {
+.card h3 {
     font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 15px;
@@ -155,21 +148,21 @@ section h2 {
     text-transform: uppercase;
 }
 
-.work-item p {
+.card p {
     font-size: 1rem;
     line-height: 1.6;
 }
 
-/* Publications Section */
-.publications p {
+/* Plain paragraph styles */
+section > p {
     font-size: 1rem;
+    line-height: 1.6;
 }
 
 /* Footer */
 footer {
     margin-top: 60px;
     padding-top: 20px;
-    border-top: 1px solid #eee;
     text-align: center;
     font-size: 0.8rem;
     color: #999;
@@ -177,11 +170,11 @@ footer {
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
-    .intro {
+    section:first-of-type {
         flex-direction: column;
     }
     
-    .intro-text {
+    section:first-of-type div:first-child {
         padding-right: 0;
         margin-bottom: 30px;
     }
@@ -190,17 +183,17 @@ footer {
         margin: 0 auto;
     }
     
-    .work-items-container {
+    .grid-container {
         grid-template-columns: 1fr;
     }
     
-    .work-item img {
+    .card img {
         max-width: 100%;
     }
 }
 
 @media (min-width: 1200px) {
-    .work-items-container {
+    .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
