@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 750px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -48,7 +48,6 @@ header {
     margin: 0;
 }
 
-
 /* Intro Section */
 .intro {
     display: flex;
@@ -62,7 +61,7 @@ header {
     padding-right: 40px;
 }
 
-.intro-text h2 {
+.intro-text h1 {
     font-size: 2rem;
     margin-bottom: 20px;
     font-weight: 400;
@@ -97,23 +96,35 @@ section {
     margin-bottom: 60px;
 }
 
+/* Standardized section headings */
+section h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
 section h2 {
     font-size: 1.1rem;
     font-weight: 500;
     margin-bottom: 20px;
     letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
-/* Work Item - Unified for all sections */
+/* Work sections */
 .past-work,
 .current-work {
     width: 100%;
 }
 
+/* Unified work items container for all sections */
 .work-items-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
     gap: 40px;
+    width: 100%;
 }
 
 .work-item {
@@ -135,11 +146,13 @@ section h2 {
     transform: scale(1.05);
 }
 
+/* Work item headings */
 .work-item h3 {
     font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 15px;
     letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 .work-item p {
