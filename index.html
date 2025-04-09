@@ -3,21 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aaron Parks, PhD - Electrical engineer, co-founder of WaveWorks, and pioneer in ambient backscatter technology">
+  <meta name="keywords" content="Aaron Parks, WaveWorks, Ambient Backscatter, RF Energy Harvesting, WISP">
   <title>Aaron Parks, PhD</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <div class="container">
-    <header>
+    <header class="fade-in">
       <h1>AARON PARKS, PHD</h1>
     </header>
 
     <main>
-      <section>
-        <div>
+      <section class="profile-section fade-in">
+        <div class="profile-content">
           <h1>Hi</h1>
           <p>I'm an electrical engineer and co-founder of <a href="https://www.waveworks.tech/" target="_blank">WaveWorks</a>, where we make chips that let wireless devices move more data for less power. Previously I co-invented Ambient Backscatter, pioneered techniques around ambient RF energy harvesting, and developed battery-free sense &amp; edge compute systems. I'm based in Seattle, Washington.</p>
-          <p>Please don't hesitate to contact me at: <a href="mailto:aaronparks@ieee.org" target="_blank">aaronparks@ieee.org</a></p>
+          <p>Please don't hesitate to contact me at: <a href="mailto:aaronparks@ieee.org" target="_blank"><i class="fas fa-envelope"></i> aaronparks@ieee.org</a></p>
         </div>
         <div class="profile-pic">
           <a href="https://www.linkedin.com/in/aaron-parks-22572927/" target="_blank">
@@ -26,57 +32,98 @@
         </div>
       </section>
 
-      <section>
+      <section class="fade-in-delay-1">
         <h1>WHAT I'M DOING</h1>
         <div class="grid-container">
           <div class="card">
-            <a href="https://www.waveworks.tech/" target="_blank">
-              <img src="images/waveworks-logo.png" alt="WaveWorks Logo">
-            </a>
-            <p><a href="https://www.waveworks.tech/" target="_blank">WaveWorks</a> is bringing a radically different type of wireless connectivity solution into the mainstream. Standard-protocol backscatter comms is cheaper, lower power, and can even enable battery-free networking. I'm a co-founder and CEO of WaveWorks.</p>
+            <div class="card-image">
+              <a href="https://www.waveworks.tech/" target="_blank">
+                <img src="images/waveworks-logo.png" alt="WaveWorks Logo">
+              </a>
+            </div>
+            <div class="card-content">
+              <p><a href="https://www.waveworks.tech/" target="_blank">WaveWorks</a> is bringing a radically different type of wireless connectivity solution into the mainstream. Standard-protocol backscatter comms is cheaper, lower power, and can even enable battery-free networking. I'm a co-founder and CEO of WaveWorks.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section>
+      <section class="fade-in-delay-2">
         <h1>WHAT I DID</h1>
         
         <div class="grid-container">
           <div class="card">
             <h3>AMBIENT BACKSCATTER</h3>
-            <a href="content/parks-thesis.pdf" target="_blank">
-              <img src="images/backscatter.png" alt="Ambient Backscatter Diagram">
-            </a>
-            <p>In graduate school, I co-invented and developed technologies to allow devices to talk by reflecting ambient radio signals. This is maybe the latest incarnation of <a href="https://simson.net/ref/1948/stockman.pdf" target="_blank">Harry Stockman's 1948 use</a> of reflections to communicate. Learn more in my <a href="content/parks-thesis.pdf" target="_blank">PhD thesis</a>.</p>
+            <div class="card-image">
+              <a href="content/parks-thesis.pdf" target="_blank">
+                <img src="images/backscatter.png" alt="Ambient Backscatter Diagram">
+              </a>
+            </div>
+            <div class="card-content">
+              <p>In graduate school, I co-invented and developed technologies to allow devices to talk by reflecting ambient radio signals. This is maybe the latest incarnation of <a href="https://simson.net/ref/1948/stockman.pdf" target="_blank">Harry Stockman's 1948 use</a> of reflections to communicate. Learn more in my <a href="content/parks-thesis.pdf" target="_blank">PhD thesis</a>.</p>
+            </div>
           </div>
 
           <div class="card">
             <h3>WISP</h3>
-            <a href="https://github.com/wisp" target="_blank">
-              <img src="images/wisp.png" alt="WISP Device">
-            </a>
-            <p>The <a href="https://github.com/wisp" target="_blank">WISP</a> is an open-source, software-defined RFID tag built around a low-power MSP430 microcontroller. It's powered wirelessly, and so doesn't have or need a battery. The WISP is a long-running project of my PhD advisor, Prof. Joshua Smith, and I was lucky enough to be involved in the development and promotion of the WISP 5.</p>
+            <div class="card-image">
+              <a href="https://github.com/wisp" target="_blank">
+                <img src="images/wisp.png" alt="WISP Device">
+              </a>
+            </div>
+            <div class="card-content">
+              <p>The <a href="https://github.com/wisp" target="_blank">WISP</a> is an open-source, software-defined RFID tag built around a low-power MSP430 microcontroller. It's powered wirelessly, and so doesn't have or need a battery. The WISP is a long-running project of my PhD advisor, Prof. Joshua Smith, and I was lucky enough to be involved in the development and promotion of the WISP 5.</p>
+            </div>
           </div>
 
           <div class="card">
             <h3>AMBIENT RF ENERGY HARVESTING</h3>
-            <a href="content/2014-MultibandHarvesting.pdf" target="_blank">
-              <img src="images/harvesting.png" alt="Energy Harvesting Device">
-            </a>
-            <p>The built environment is full of radio frequency energy from sources such as cell towers, broadcast television transmitters, and WiFi access points. I've helped to create <a href="content/2014-MultibandHarvesting.pdf" target="_blank">new systems for efficiently harvesting and combining</a> the ambient energy from all these sources.</p>
+            <div class="card-image">
+              <a href="content/2014-MultibandHarvesting.pdf" target="_blank">
+                <img src="images/harvesting.png" alt="Energy Harvesting Device">
+              </a>
+            </div>
+            <div class="card-content">
+              <p>The built environment is full of radio frequency energy from sources such as cell towers, broadcast television transmitters, and WiFi access points. I've helped to create <a href="content/2014-MultibandHarvesting.pdf" target="_blank">new systems for efficiently harvesting and combining</a> the ambient energy from all these sources.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section>
+      <section class="fade-in-delay-3">
         <h2>PUBLICATIONS</h2>
-        <p>Take a look at my <a href="https://scholar.google.com/citations?hl=en&user=oLQETZIAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Google Scholar page</a> for a full list.</p>
+        <p>Take a look at my <a href="https://scholar.google.com/citations?hl=en&user=oLQETZIAAAAJ&view_op=list_works&sortby=pubdate" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar page</a> for a full list.</p>
       </section>
     </main>
 
     <footer>
-      Copyright 2025 Aaron Parks
+      <p>Copyright &copy; <span id="current-year">2025</span> Aaron Parks</p>
+      <div class="social-links mt-2">
+        <a href="https://www.linkedin.com/in/aaron-parks-22572927/" target="_blank" aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/joulesverne" target="_blank" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+      </div>
     </footer>
   </div>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
+    // Simple intersection observer for animations
+    document.addEventListener('DOMContentLoaded', function() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.1 });
+      
+      document.querySelectorAll('.card').forEach(card => {
+        observer.observe(card);
+        card.classList.add('animate-on-scroll');
+      });
+    });
+  </script>
 </body>
 </html>
